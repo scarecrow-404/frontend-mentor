@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/HankenGrotesk-VariableFont_wght.ttf"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body id="landing-page" class="h-screen">
+    <div class="sm:max-2xl:flex sm:max-2xl:justify-center sm:max-2xl:items-center sm:max-2xl:h-[100%]">
+      <section
+        class="flex box-border m-auto flex-col sm:max-2xl:flex-row sm:max-2xl:w-[800px] sm:max-2xl:h-[600px] sm:max-2xl:justify-center sm:max-2xl:items-center drop-shadow-xl rounded-3xl shadow-[4px_4px_30px_rgba(0,0,255,0.2)]"
+      >
+        <div
+          id="score-container"
+          class="flex w-[100%] h-[100%] bg-gradient-to-b from-[#7857ff] to-[#2e2be9] flex-col items-center gap-[20px] rounded-b-3xl p-6 sm:max-2xl:rounded-3xl justify-around"
+        >
+          <h2 class="text-[#ebf1ff] opacity-75 text-2xl font-medium">
+            Your Result
+          </h2>
+          <div
+            id="score-circle"
+            class="bg-gradient-to-b from-[#4e21ca] to-[#2421ca] w-[250px] h-[250px] flex items-center justify-center rounded-[50%] flex-col gap-[5%]"
+          >
+            <h1 class="text-white text-center text-7xl font-bold">76</h1>
+            <h2 class="text-[#ebf1ff] opacity-75 font-medium text-xl">
+              of 100
+            </h2>
+          </div>
+
+          <h1 class="text-[#ebf1ff] text-3xl font-medium">Great</h1>
+          <p class="text-[#ebf1ff] opacity-60 text-[18px]">
+            You scored higher than 65% of the <br />
+            people who have taken these tests.
+          </p>
+        </div>
+        <div
+          id="score-name-summary"
+          class="w-[100%] h-[100%] flex-col p-8 space-y-8"
+        >
+          <div class="text-2xl p-2">
+            <h2 class="font-medium">Summary</h2>
+          </div>
+          <div
+            class="flex justify-around bg-red-100 p-2 rounded-lg m-2 flex-grow h-[12%] items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="#F55"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"
+              />
+            </svg>
+            <h2 class="text-[#ff5757] w-[50%]">Reaction</h2>
+            <h2 class="text-[#ff5757]">80</h2>
+            <h2 class="text-gray-500">/ 100</h2>
+          </div>
+          <div
+            class="flex justify-around bg-amber-100 p-2 rounded-lg m-2 h-[12%] items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="#FFB21E"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858"
+              />
+              <path
+                stroke="#FFB21E"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858"
+              />
+              <path
+                stroke="#FFB21E"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0"
+              />
+            </svg>
+            <h2 class="text-[#ffb01f] w-[50%]">Memory</h2>
+            <h2 class="text-[#ffb01f]">92</h2>
+            <h2 class="text-gray-500">/ 100</h2>
+          </div>
+          <div
+            class="flex justify-around bg-green-100 p-2 rounded-lg m-2 h-[12%] items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="#00BB8F"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z"
+              />
+            </svg>
+            <h2 class="text-[#00bd91] w-[50%]">Verbal</h2>
+            <h2 class="text-[#00bd91]">61</h2>
+            <h2 class="text-gray-500">/ 100</h2>
+          </div>
+          <div
+            class="flex justify-around bg-[#ebf1ff] p-2 rounded-lg m-2 h-[12%] items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="#1125D6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z"
+              />
+              <path
+                stroke="#1125D6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z"
+              />
+            </svg>
+            <h2 class="text-[#1125d4] w-[50%]">Visual</h2>
+            <h2 class="text-[#1125d4]">72</h2>
+            <h2 class="text-gray-500">/ 100</h2>
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="bg-[#303b5a] text-white w-[80%] p-3 rounded-full active:bg-gradient-to-b active:from-[#7857ff] active:to-[#2e2be9]"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+      </div>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Scarecrow-404</a>.
+      </div>
+    
+  </body>
+</html>
